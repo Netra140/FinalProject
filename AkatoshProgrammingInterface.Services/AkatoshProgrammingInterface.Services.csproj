@@ -64,5 +64,15 @@
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AkatoshProgrammingInterface.Data\AkatoshProgrammingInterface.Data.csproj">
+      <Project>{65dce037-3cc5-4caf-9797-a4c9cdf85ab0}</Project>
+      <Name>AkatoshProgrammingInterface.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AkatoshProgrammingInterface.Models\AkatoshProgrammingInterface.Models.csproj">
+      <Project>{763AAB60-1E94-4ED6-9F64-A0427CE70C97}</Project>
+      <Name>AkatoshProgrammingInterface.Models</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

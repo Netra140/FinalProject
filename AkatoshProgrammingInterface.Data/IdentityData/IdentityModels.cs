@@ -3,6 +3,8 @@ using System.Data.Entity.ModelConfiguration;
 using System.Data.Entity.ModelConfiguration.Conventions;
 using System.Security.Claims;
 using System.Threading.Tasks;
+using AkatoshProgrammingInterface.Data.GodData;
+using AkatoshProgrammingInterface.Data.PantheonData;
 using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.EntityFramework;
 using Microsoft.AspNet.Identity.Owin;
@@ -27,14 +29,15 @@ namespace AkatoshProgrammingInterface.Data.IdentityData
             : base("DefaultConnection", throwIfV1Schema: false)
         {
         }
-        
+
         public static ApplicationDbContext Create()
         {
             return new ApplicationDbContext();
         }
 
         //Insert DbContext Here >>>>>>>>>>>
-        //---------
+        public DbSet<Pantheon> Pantheons { get; set; }
+        public DbSet<God> Gods { get; set; }
         //---------
         //---------
         //---------
