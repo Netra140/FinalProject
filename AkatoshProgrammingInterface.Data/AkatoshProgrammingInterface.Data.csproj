@@ -9,11 +9,12 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>AkatoshProgrammingInterface.Data</RootNamespace>
     <AssemblyName>AkatoshProgrammingInterface.Data</AssemblyName>
-    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -88,12 +89,12 @@
   <ItemGroup>
     <Compile Include="IdentityData\IdentityModels.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RaceData\Race.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="GodData\" />
     <Folder Include="PantheonData\" />
     <Folder Include="ProvinceData\" />
-    <Folder Include="RaceData\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

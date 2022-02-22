@@ -9,9 +9,10 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>AkatoshProgrammingInterface.Services</RootNamespace>
     <AssemblyName>AkatoshProgrammingInterface.Services</AssemblyName>
-    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -63,6 +64,16 @@
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AkatoshProgrammingInterface.Data\AkatoshProgrammingInterface.Data.csproj">
+      <Project>{65dce037-3cc5-4caf-9797-a4c9cdf85ab0}</Project>
+      <Name>AkatoshProgrammingInterface.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AkatoshProgrammingInterface.Models\AkatoshProgrammingInterface.Models.csproj">
+      <Project>{763aab60-1e94-4ed6-9f64-a0427ce70c97}</Project>
+      <Name>AkatoshProgrammingInterface.Models</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
