@@ -87,6 +87,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="GodData\God.cs" />
+    <Compile Include="IdentityData\ApplicationUser.cs" />
     <Compile Include="IdentityData\IdentityModels.cs" />
     <Compile Include="PantheonData\Pantheon.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
