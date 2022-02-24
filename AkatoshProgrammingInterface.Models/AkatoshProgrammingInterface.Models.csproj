@@ -9,9 +9,10 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>AkatoshProgrammingInterface.Models</RootNamespace>
     <AssemblyName>AkatoshProgrammingInterface.Models</AssemblyName>
-    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -63,14 +64,22 @@
     <Compile Include="PantheonModels\PantheonEdit.cs" />
     <Compile Include="PantheonModels\PantheonList.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RaceModels\RaceCreate.cs" />
+    <Compile Include="RaceModels\RaceEdit.cs" />
+    <Compile Include="RaceModels\RaceList.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="ProvinceModels\" />
-    <Folder Include="RaceModels\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AkatoshProgrammingInterface.Data\AkatoshProgrammingInterface.Data.csproj">
+      <Project>{65dce037-3cc5-4caf-9797-a4c9cdf85ab0}</Project>
+      <Name>AkatoshProgrammingInterface.Data</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

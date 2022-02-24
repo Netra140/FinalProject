@@ -9,9 +9,10 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>AkatoshProgrammingInterface.Services</RootNamespace>
     <AssemblyName>AkatoshProgrammingInterface.Services</AssemblyName>
-    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -70,6 +71,7 @@
       <Name>AkatoshProgrammingInterface.Data</Name>
     </ProjectReference>
     <ProjectReference Include="..\AkatoshProgrammingInterface.Models\AkatoshProgrammingInterface.Models.csproj">
+      //<Project>{763aab60-1e94-4ed6-9f64-a0427ce70c97}</Project>
       <Project>{763AAB60-1E94-4ED6-9F64-A0427CE70C97}</Project>
       <Name>AkatoshProgrammingInterface.Models</Name>
     </ProjectReference>
