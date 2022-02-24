@@ -86,12 +86,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="GodData\God.cs" />
+    <Compile Include="IdentityData\ApplicationUser.cs" />
     <Compile Include="IdentityData\IdentityModels.cs" />
+    <Compile Include="PantheonData\Pantheon.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="GodData\" />
-    <Folder Include="PantheonData\" />
     <Folder Include="ProvinceData\" />
     <Folder Include="RaceData\" />
   </ItemGroup>
