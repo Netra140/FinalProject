@@ -1,16 +1,10 @@
 ﻿using System.Data.Entity;
 using System.Data.Entity.ModelConfiguration;
 using System.Data.Entity.ModelConfiguration.Conventions;
-
-using System.Security.Claims;
-using System.Threading.Tasks;
 using AkatoshProgrammingInterface.Data.RaceData;
-using System.Data.Entity.ModelConfiguration;
-using Microsoft.AspNet.Identity;
 using AkatoshProgrammingInterface.Data.GodData;
 using AkatoshProgrammingInterface.Data.PantheonData;
 using Microsoft.AspNet.Identity.EntityFramework;
-using Microsoft.AspNet.Identity.Owin;
 
 namespace AkatoshProgrammingInterface.Data.IdentityData
 {
@@ -27,7 +21,6 @@ namespace AkatoshProgrammingInterface.Data.IdentityData
             return new ApplicationDbContext();
         }
 
-        //Insert DbContext Here 
         public DbSet<Race> Race { get; set; }
         public DbSet<Province> Provinces {  get; set; }
         public DbSet<Pantheon> Pantheons { get; set; }
