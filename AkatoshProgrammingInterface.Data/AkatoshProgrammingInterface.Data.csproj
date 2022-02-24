@@ -92,6 +92,7 @@
     <Compile Include="IdentityData\IdentityModels.cs" />
     <Compile Include="PantheonData\Pantheon.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Province.cs" />
     <Compile Include="RaceData\Race.cs" />
   </ItemGroup>
   <ItemGroup>

@@ -29,6 +29,7 @@ namespace AkatoshProgrammingInterface.Data.IdentityData
 
         //Insert DbContext Here 
         public DbSet<Race> Race { get; set; }
+        public DbSet<Province> Provinces {  get; set; }
         public DbSet<Pantheon> Pantheons { get; set; }
         public DbSet<God> Gods { get; set; }
 
