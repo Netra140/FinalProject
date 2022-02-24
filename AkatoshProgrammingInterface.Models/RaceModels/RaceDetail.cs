@@ -15,7 +15,7 @@ namespace AkatoshProgrammingInterface.Models.RaceModels
         public int ProvinceID { get; set; }
         public int PantheonID { get; set; }
         public int RaceType { get; set; }
-        [Display(Name="Created")]
+        [Display(Name = "Created")]
         public DateTimeOffset CreatedUtc { get; set; }
         [Display(Name = "Modified")]
         public DateTimeOffset? ModifiedUtc { get; set; }

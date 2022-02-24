@@ -20,9 +20,8 @@ namespace AkatoshProgrammingInterface.Data.GodData
         [Required]
         public string GodDesc { get; set; }
 
-        // [ForeignKey]
-        //public int PantheonID { get; set; } // FK 
-
+        [ForeignKey("GID")]
         public virtual Pantheon Pantheon { get; set; }
+        public int GID { get; set; }
     }
 }

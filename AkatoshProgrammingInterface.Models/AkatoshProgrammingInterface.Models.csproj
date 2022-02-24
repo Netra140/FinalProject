@@ -65,6 +65,7 @@
     <Compile Include="PantheonModels\PantheonList.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RaceModels\RaceCreate.cs" />
+    <Compile Include="RaceModels\RaceDetail.cs" />
     <Compile Include="RaceModels\RaceEdit.cs" />
     <Compile Include="RaceModels\RaceList.cs" />
   </ItemGroup>
