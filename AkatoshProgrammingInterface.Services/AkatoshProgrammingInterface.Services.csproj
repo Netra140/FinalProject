@@ -71,7 +71,8 @@
       <Name>AkatoshProgrammingInterface.Data</Name>
     </ProjectReference>
     <ProjectReference Include="..\AkatoshProgrammingInterface.Models\AkatoshProgrammingInterface.Models.csproj">
-      <Project>{763aab60-1e94-4ed6-9f64-a0427ce70c97}</Project>
+      //<Project>{763aab60-1e94-4ed6-9f64-a0427ce70c97}</Project>
+      <Project>{763AAB60-1E94-4ED6-9F64-A0427CE70C97}</Project>
       <Name>AkatoshProgrammingInterface.Models</Name>
     </ProjectReference>
   </ItemGroup>

@@ -55,14 +55,20 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="GodModels\GodCreate.cs" />
+    <Compile Include="GodModels\GodDetail.cs" />
+    <Compile Include="GodModels\GodEdit.cs" />
+    <Compile Include="GodModels\GodList.cs" />
+    <Compile Include="PantheonModels\PantheonCreate.cs" />
+    <Compile Include="PantheonModels\PantheonDetail.cs" />
+    <Compile Include="PantheonModels\PantheonEdit.cs" />
+    <Compile Include="PantheonModels\PantheonList.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RaceModels\RaceCreate.cs" />
     <Compile Include="RaceModels\RaceEdit.cs" />
     <Compile Include="RaceModels\RaceList.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="GodModels\" />
-    <Folder Include="PantheonModels\" />
     <Folder Include="ProvinceModels\" />
   </ItemGroup>
   <ItemGroup>

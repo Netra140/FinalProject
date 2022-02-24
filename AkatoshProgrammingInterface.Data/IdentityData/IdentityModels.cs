@@ -1,27 +1,19 @@
 ﻿using System.Data.Entity;
 using System.Data.Entity.ModelConfiguration;
 using System.Data.Entity.ModelConfiguration.Conventions;
+
 using System.Security.Claims;
 using System.Threading.Tasks;
 using AkatoshProgrammingInterface.Data.RaceData;
 using System.Data.Entity.ModelConfiguration;
 using Microsoft.AspNet.Identity;
+using AkatoshProgrammingInterface.Data.GodData;
+using AkatoshProgrammingInterface.Data.PantheonData;
 using Microsoft.AspNet.Identity.EntityFramework;
 using Microsoft.AspNet.Identity.Owin;
 
 namespace AkatoshProgrammingInterface.Data.IdentityData
 {
-    // You can add profile data for the user by adding more properties to your ApplicationUser class, please visit https://go.microsoft.com/fwlink/?LinkID=317594 to learn more.
-    public class ApplicationUser : IdentityUser
-    {
-        public async Task<ClaimsIdentity> GenerateUserIdentityAsync(UserManager<ApplicationUser> manager, string authenticationType)
-        {
-            // Note the authenticationType must match the one defined in CookieAuthenticationOptions.AuthenticationType
-            var userIdentity = await manager.CreateIdentityAsync(this, authenticationType);
-            // Add custom user claims here
-            return userIdentity;
-        }
-    }
 
     public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
     {
@@ -29,7 +21,7 @@ namespace AkatoshProgrammingInterface.Data.IdentityData
             : base("DefaultConnection", throwIfV1Schema: false)
         {
         }
-        
+
         public static ApplicationDbContext Create()
         {
             return new ApplicationDbContext();
@@ -37,11 +29,8 @@ namespace AkatoshProgrammingInterface.Data.IdentityData
 
         //Insert DbContext Here 
         public DbSet<Race> Race { get; set; }
-        //---------
-        //---------
-        //---------
-        //---------
-        //**********************************
+        public DbSet<Pantheon> Pantheons { get; set; }
+        public DbSet<God> Gods { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
