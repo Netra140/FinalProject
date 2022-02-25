@@ -83,7 +83,7 @@ namespace AkatoshProgrammingInterface.Services
         {
             using (var ctx = new ApplicationDbContext())
             {
-                var entity =
+                God entity =
                     ctx
                     .Gods
                     .Single(e=> e.GodID == godID);

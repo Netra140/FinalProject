@@ -51,5 +51,19 @@ namespace AkatoshProgrammingInterface.WebAPI.Controllers
                 return InternalServerError();
             return Ok();
         }
+
+        [HttpPut]
+        public IHttpActionResult Put(GodEdit model)
+        {
+            if (!ModelState.IsValid)
+                return BadRequest(ModelState);
+
+            var service = new GodService();
+
+            if (!service.UpdateGod(model))
+                return InternalServerError();
+
+            return Ok();
+        }
     }
 }

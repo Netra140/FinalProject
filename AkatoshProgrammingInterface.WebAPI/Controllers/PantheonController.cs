@@ -51,5 +51,19 @@ namespace AkatoshProgrammingInterface.WebAPI.Controllers
                 return InternalServerError();
             return Ok();
         }
+
+        [HttpPut]
+        public IHttpActionResult Put(PantheonEdit model)
+        {
+            if (!ModelState.IsValid)
+                return BadRequest(ModelState);
+
+            var service = new PantheonService();
+
+            if (!service.UpdatePantheon(model))
+                return InternalServerError();
+
+            return Ok();
+        }
     }
 }

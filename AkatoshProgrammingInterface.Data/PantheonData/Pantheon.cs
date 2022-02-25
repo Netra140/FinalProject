@@ -17,8 +17,9 @@ namespace AkatoshProgrammingInterface.Data.PantheonData
         [Required]
         public string PantheonName { get; set; }
 
-        [ForeignKey("GID")]
+        //One Pantheon Can Have Many Gods//
         public virtual ICollection<God> Gods { get; set; } = new List<God>();
+
     }
 
 }
