@@ -13,7 +13,7 @@ namespace AkatoshProgrammingInterface.Models.RaceModels
         [MinLength(1, ErrorMessage = "Please enter at least 1 Character for the name")]
         public string Name { get; set; }
         public bool Playable { get; set; }
-        public int ProvinceID { get; set; }
+        //public int ProvinceID { get; set; }
         public int PantheonID { get; set; }
         public int RaceType { get; set; }
     }

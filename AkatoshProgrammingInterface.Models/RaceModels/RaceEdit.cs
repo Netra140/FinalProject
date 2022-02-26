@@ -14,12 +14,12 @@ namespace AkatoshProgrammingInterface.Models.RaceModels
         [Required]
         public string Name { get; set; }
 
-        [Required]
-        public int ProvinceID { get; set; }
+       // [Required]
+       // public int ProvinceID { get; set; }
         [Required]
         public int PantheonID { get; set; }
-        [Required]
-        public int RaceType { get; set; }
+        //[Required]
+        //public int RaceType { get; set; }
         [Key]
         public int RaceID { get; set; }
     }

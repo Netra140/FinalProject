@@ -103,6 +103,14 @@
     <Compile Include="Migrations\202202252147067_testfix.designer.cs">
       <DependentUpon>202202252147067_testfix.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202202261500500_finalprep.cs" />
+    <Compile Include="Migrations\202202261500500_finalprep.designer.cs">
+      <DependentUpon>202202261500500_finalprep.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202202261512104_FinalFix.cs" />
+    <Compile Include="Migrations\202202261512104_FinalFix.designer.cs">
+      <DependentUpon>202202261512104_FinalFix.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="PantheonData\Pantheon.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -125,6 +133,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202202252147067_testfix.resx">
       <DependentUpon>202202252147067_testfix.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202202261500500_finalprep.resx">
+      <DependentUpon>202202261500500_finalprep.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202202261512104_FinalFix.resx">
+      <DependentUpon>202202261512104_FinalFix.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
