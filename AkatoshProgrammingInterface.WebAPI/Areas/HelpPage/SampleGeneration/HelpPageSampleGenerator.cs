@@ -378,7 +378,7 @@ namespace AkatoshProgrammingInterface.WebAPI.Areas.HelpPage
             try
             {
                 object parsedJson = JsonConvert.DeserializeObject(str);
-                return JsonConvert.SerializeObject(parsedJson, Formatting.Indented);
+                return JsonConvert.SerializeObject(parsedJson, (Formatting)System.Xml.Formatting.Indented);
             }
             catch
             {
