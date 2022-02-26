@@ -16,17 +16,21 @@ namespace AkatoshProgrammingInterface.Data.RaceData
         [Required]
         public string Name { get; set; }
 
-        [Required]
-        public int ProvinceID { get; set; } //must match a province ID will be input from a string
+        //[Required]
+        //public int ProvinceID { get; set; } //must match a province ID will be input from a string
+
         [Required]
         public int PantheonID { get; set; }
-        [Required]
+        //[Required]
         public int RaceType { get; set; }
         [Required]
         public Guid OwnerID { get; set; }
+
+        /*
         [Required]
         public DateTimeOffset CreatedUtc { get; set; }
         [Required]
         public DateTimeOffset ModifiedUtc { get; set; }
+        */
     }
 }

@@ -20,7 +20,7 @@ namespace AkatoshProgrammingInterface.Services {
 
         public bool CreateRace(RaceCreate model)
         {
-            Race entity = new Race() {Playable = model.Playable, Name = model.Name, ProvinceID = model.ProvinceID, PantheonID = model.PantheonID, RaceType = model.RaceType};
+            Race entity = new Race() {Playable = model.Playable, Name = model.Name, /*ProvinceID = model.ProvinceID*/ PantheonID = model.PantheonID, RaceType = model.RaceType};
             using (var ctx = new ApplicationDbContext())
             {
                 ctx.Race.Add(entity);
@@ -40,7 +40,7 @@ namespace AkatoshProgrammingInterface.Services {
                             new RaceList { 
                             RaceId = e.RaceID,
                             Name = e.Name,
-                            CreatedUtc = e.CreatedUtc
+                            //CreatedUtc = e.CreatedUtc
                             }
                         );
                 return query.ToArray();
@@ -61,11 +61,11 @@ namespace AkatoshProgrammingInterface.Services {
                         RaceID = entity.RaceID,
                         Playable = entity.Playable,
                         Name = entity.Name,
-                        ProvinceID = entity.ProvinceID,
+                        //ProvinceID = entity.ProvinceID,
                         PantheonID = entity.PantheonID,
-                        RaceType = entity.RaceType,
-                        CreatedUtc = entity.CreatedUtc,
-                        ModifiedUtc = entity.ModifiedUtc
+                        //RaceType = entity.RaceType
+                        //CreatedUtc = entity.CreatedUtc,
+                        //ModifiedUtc = entity.ModifiedUtc
                     };
             }
         }
@@ -78,9 +78,9 @@ namespace AkatoshProgrammingInterface.Services {
 
                 entity.Playable = model.Playable;
                 entity.Name = model.Name;
-                entity.ProvinceID = model.ProvinceID;
+                /*entity.ProvinceID = model.ProvinceID;*/
                 entity.PantheonID = model.PantheonID;
-                entity.RaceType = model.RaceType;
+                //entity.RaceType = model.RaceType;
 
                 return ctx.SaveChanges() == 1;
             }

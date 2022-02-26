@@ -10,6 +10,7 @@ using System.Net.Http;
 using System.Net.Http.Formatting;
 using System.Net.Http.Headers;
 using System.Web.Http.Description;
+using System.Xml.Linq;
 using Newtonsoft.Json;
 
 namespace AkatoshProgrammingInterface.WebAPI.Areas.HelpPage
@@ -377,7 +378,7 @@ namespace AkatoshProgrammingInterface.WebAPI.Areas.HelpPage
             try
             {
                 object parsedJson = JsonConvert.DeserializeObject(str);
-                return JsonConvert.SerializeObject(parsedJson, System.Xml.Formatting.Indented);
+                return JsonConvert.SerializeObject(parsedJson, (Formatting)System.Xml.Formatting.Indented);
             }
             catch
             {

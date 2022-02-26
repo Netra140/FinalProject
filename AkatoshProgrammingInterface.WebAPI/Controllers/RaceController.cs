@@ -20,6 +20,7 @@ namespace AkatoshProgrammingInterface.WebAPI.Controllers
             return noteService;
         }
 
+        [HttpGet]
         public IHttpActionResult Get()
         {
             RaceService raceService = CreateRaceService();
@@ -27,6 +28,7 @@ namespace AkatoshProgrammingInterface.WebAPI.Controllers
             return Ok(races);
         }
 
+        [HttpPost]
         public IHttpActionResult Post(RaceCreate race)
         {
             if (!ModelState.IsValid)
@@ -41,39 +43,42 @@ namespace AkatoshProgrammingInterface.WebAPI.Controllers
             return Ok();
         }
 
-        IHttpActionResult Get(int id)
+        [HttpGet]
+        public IHttpActionResult Get(int id)
         {
             RaceService noteService = CreateRaceService();
             var note = noteService.GetRaceById(id);
             return Ok(note);
+        }
 
-
-
-            IHttpActionResult Put(RaceEdit race)
+        [HttpPut]
+        public IHttpActionResult Put(RaceEdit race)
+        {
+            if (!ModelState.IsValid)
             {
-                if (!ModelState.IsValid)
-                {
-                    return BadRequest(ModelState);
-                }
-
-                var service = CreateRaceService();
-
-                if (!service.UpdateRace(race))
-                    return InternalServerError();
-
-                return Ok();
+                return BadRequest(ModelState);
             }
-            IHttpActionResult Delete(int ID)
+
+            var service = CreateRaceService();
+
+            if (!service.UpdateRace(race))
+                return InternalServerError();
+
+            return Ok();
+        }
+
+        [HttpDelete]
+        public IHttpActionResult Delete(int ID)
+        {
+            var service = CreateRaceService();
+
+            if (!service.DeleteRace(ID))
             {
-                var service = CreateRaceService();
-
-                if (!service.DeleteRace(ID))
-                {
-                    return InternalServerError();
-                }
-
-                return Ok();
+                return InternalServerError();
             }
+
+            return Ok();
         }
     }
 }
+

@@ -49,7 +49,7 @@ namespace AkatoshProgrammingInterface.Services
         {
             using (var ctx = new ApplicationDbContext())
             {
-                var entity = 
+                Pantheon entity = 
                     ctx
                     .Pantheons
                     .Single(e=> e.PantheonID == id);
